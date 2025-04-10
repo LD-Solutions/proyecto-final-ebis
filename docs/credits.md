@@ -1,0 +1,2 @@
+oficina1 - Foto de Antoni Shkraba: https://www.pexels.com/es-es/foto/marketing-oferta-ofrecer-hacer-una-oferta-5816283/
+oficina2 - Foto de Artem Podrez: https://www.pexels.com/es-es/foto/empresario-hombre-de-negocios-persona-mujer-6779716/
