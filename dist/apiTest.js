@@ -34,6 +34,8 @@ async function obtenerDatos() {
     return arrayStock;
 }
 async function pintarDatos() {
+    document.querySelectorAll(".contenido").innerHTML = "Cargando...";
+
     const datos = await obtenerDatos();
     console.log(datos);
     datos.forEach((element) => {
@@ -61,4 +63,5 @@ async function pintarDatos() {
 }
 boton.addEventListener("click", () => {
     pintarDatos();
+    boton.disabled = true;
 });
