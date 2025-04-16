@@ -28,3 +28,5 @@ proyecto-final-ebis/
 ```
 
 ## Características
+### Páginas
+### Relación de páginas con integrantes del equipo
