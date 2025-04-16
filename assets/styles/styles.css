@@ -16,12 +16,13 @@ html {
     font-size: 16px;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     color: #222;
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-white);
 
-    --color-primary: red;
-    --color-secondary: blue;
+    --color-primary: #243351;
+    --color-secondary: #bba7ea;
     --color-accent: green;
     --color-bg-grey: #333;
+    --color-bg-white: #f9f9f9;
 }
 
 ol, ul {
@@ -34,3 +35,39 @@ img {
 }
 
 /* BARRA DE NAVEGACION Y CABECERA */
+.cabecera {
+    min-height: 100dvh;
+    background: linear-gradient(38deg, var(--color-primary), var(--color-secondary));
+}
+
+.barra-navegacion {
+    background-color: var(--color-bg-white);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10dvh;
+    padding: 0 2rem;
+    box-shadow: 0 0 10px var(--color-bg-grey);
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90dvh;
+
+    img {
+        width: 20vw;
+        border-radius: 1000px;
+        border: var(--color-bg-white) 3px solid;
+        box-shadow: 0 0 10px var(--color-bg-grey);
+    }
+}
