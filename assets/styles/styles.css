@@ -19,8 +19,9 @@ html {
     background-color: var(--color-bg-white);
 
     --color-primary: #243351;
+    --color-primary-85: rgba(36, 51, 81, 0.85);
     --color-secondary: #bba7ea;
-    --color-accent: green;
+    --color-secondary-85: rgba(187, 167, 234, 0.85);
     --color-bg-grey: #333;
     --color-bg-white: #f9f9f9;
 }
@@ -41,7 +42,11 @@ strong {
 /* BARRA DE NAVEGACION Y CABECERA */
 .cabecera {
     min-height: 100dvh;
-    background: linear-gradient(38deg, var(--color-primary), var(--color-secondary));
+}
+
+.cabecera.index {
+    background: linear-gradient(38deg, var(--color-primary-85) 10%, var(--color-secondary-85) 90%), url("../images/city.gif") no-repeat center center;
+    background-size: cover;
 }
 
 .barra-navegacion {
@@ -62,11 +67,12 @@ strong {
     }
 
     a {
-
+        color: var(--color-primary);
+        text-decoration-color: transparent;
         transition: all .4s ease-in-out;
 
         &:hover {
-            
+            text-decoration-color: var(--color-primary);
         }
     }
 }
@@ -95,12 +101,20 @@ strong {
     }    
 }
 
+.hero__title {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--color-bg-white);
+    font-weight: 600;
+    text-shadow: 0 0 4px var(--color-bg-grey);
+}
+
 .hero__cta {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--color-bg-white);
     background-color: var(--color-primary);
-    padding: 1rem;
+    padding: .75rem 1rem .2rem 1rem;
     border-radius: 2rem;
     border: var(--color-bg-white) 1px solid;
     text-align: center;
@@ -131,7 +145,6 @@ strong {
     }
 }
 
-
 .pie-pagina__copy {
     display: flex;
     flex-direction: column;
@@ -141,13 +154,22 @@ strong {
 
 
 /* MULTIUSOS */
-.col3{
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.columna{
+.columna {
     display: flex;
     flex-direction: column;
     gap: .3rem;
+}
+
+.row {
+    flex-direction: row;
 }
