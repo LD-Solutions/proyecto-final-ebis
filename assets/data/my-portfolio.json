@@ -1,0 +1,14 @@
+{
+    "NFLX": {
+        "stockSymbol": "NFLX",
+        "name": "Netflix, Inc.",
+        "stocks": 100,
+        "value": 25
+    },
+    "AAPL": {
+        "stockSymbol": "AAPL",
+        "name": "Apple Inc.",
+        "stocks": 65,
+        "value": 25
+    }
+}
