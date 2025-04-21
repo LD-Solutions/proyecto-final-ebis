@@ -188,6 +188,17 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 100%;
+}
+
+.grid-child {
+    width: 300px;
+    height: fit-content;
+}
+
 .columna {
     display: flex;
     flex-direction: column;
@@ -195,6 +206,7 @@ a {
 }
 
 .row {
+    display: flex;
     flex-direction: row;
 }
 
@@ -329,4 +341,87 @@ a {
         max-width: 500px;
         margin: 0 auto;
     }
+}
+
+
+/* PÁGINA DE BOLSA */
+
+.carta-bolsa {
+    padding: 20px;
+    background-color: var(--color-bg-white);
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(36, 51, 81, 0.15);
+}
+
+.cartas-bolsa {
+    padding: 40px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.carta-bolsa:hover {
+    box-shadow: 0 4px 20px rgba(36, 51, 81, 0.25);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.titulo-carta-bolsa h2 {
+    font-weight: 600;
+}
+
+.titulo-carta-bolsa {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo-carta-bolsa {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.contenido-carta-bolsa ul {
+    list-style: none;
+}
+
+.bullet-bolsa-fecha::before {
+    content: "📆";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.bullet-bolsa-apertura::before {
+    content: "🔑";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.bullet-bolsa-cierre::before {
+    content: "🔒";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.bullet-bolsa-maxima::before {
+    content: "🔼";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.bullet-bolsa-minima::before {
+    content: "🔽";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.bullet-bolsa-volumen::before {
+    content: "📊";
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.resultado-dia-bolsa {
+    padding: 5px;
+    border-radius: 4px;
+    color: var(--color-bg-white);
+    margin-left: auto;
 }
