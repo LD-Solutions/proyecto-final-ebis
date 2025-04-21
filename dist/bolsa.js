@@ -3,7 +3,6 @@ let arrayStock = [];
 const nombresStock = ["AAPL", "MSFT", "NFLX", "AMZN"];
 const API_KEY = config.API_KEY;
 const globalUrl = "https://financialdata.net/api/v1/";
-const boton = document.getElementById("boton");
 async function datosStock(simboloStock) {
     const urlOriginal = `${globalUrl}stock-prices?key=${API_KEY}&identifier=${simboloStock}`;
     const urlConProxy = `https://api.allorigins.win/get?url=${encodeURIComponent(urlOriginal)}`;

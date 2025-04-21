@@ -15,7 +15,6 @@ let arrayStock: (StockData | null)[] = [];
 const nombresStock: string[] = ["AAPL", "MSFT", "NFLX", "AMZN"];
 const API_KEY: string = config.API_KEY;
 const globalUrl: string = "https://financialdata.net/api/v1/";
-const boton = document.getElementById("boton") as HTMLButtonElement;
 
 // Obtiene los últimos datos financieros de un STOCK en concreto del último día disponible
 async function datosStock(simboloStock: string): Promise<StockData | null> {
