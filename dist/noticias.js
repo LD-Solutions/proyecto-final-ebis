@@ -1,6 +1,6 @@
 import config from "./config.js";
 const API_KEY = config.NEWS_API_KEY;
-fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`)
+fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`)
     .then(response => response.json())
     .then(data => renderArticles(data));
 function renderArticles(data) {
@@ -41,6 +41,7 @@ function buildArticle(article) {
     cta.href = article.url;
     cta.className = "dual-section__cta";
     cta.textContent = "Leer más";
+    cta.target = "_blank";
     content.append(title, author, text, cta);
     container.append(media, content);
     art.appendChild(container);
