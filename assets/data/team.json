@@ -1,0 +1,49 @@
+{
+  "Dirección": {
+    "name": "Dirección",
+    "members": [
+      {
+        "name": "David Moragón",
+        "role": "Co-fundador",
+        "image": "/assets/images/team/david.jpg"
+      },
+      {
+        "name": "Luis Fernández",
+        "role": "Co-fundador",
+        "image": "/assets/images/team/luis.jpg"
+      }
+    ]
+  },
+
+  "Marketing": {
+    "name": "Marketing",
+    "members": [
+      {
+        "name": "Gabriela Núñez",
+        "role": "Community Manager",
+        "image": "/assets/images/team/gabriela.jpg"
+      },
+      {
+        "name": "Teresa Suárez",
+        "role": "Digital Marketing",
+        "image": "/assets/images/team/teresa.jpg"
+      }
+    ]
+  },
+
+  "Desarrollo": {
+    "name": "Desarrollo",
+    "members": [
+      {
+        "name": "David Moragón",
+        "role": "Desarrollador Full Stack",
+        "image": "/assets/images/team/david.jpg"
+      },
+      {
+        "name": "Luis Fernández",
+        "role": "Desarrollador Full Stack",
+        "image": "/assets/images/team/luis.jpg"
+      }
+    ]
+  }
+}
