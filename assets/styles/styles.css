@@ -349,6 +349,13 @@ a {
   }
 }
 
+.legal {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
 /* PÁGINA DE BOLSA */
 
 .carta-bolsa {
